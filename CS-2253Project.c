@@ -1,4 +1,4 @@
-//#include <stdio.h>   //create a header file and then use this line to import  
+#include <stdio.h>   //create a header file and then use this line to import  
 #include <string.h>    //create a header file and then use this line to import
 #include <stdlib.h>      
 
