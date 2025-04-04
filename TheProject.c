@@ -18,6 +18,15 @@
 
 // Function prototypes(functions being used as part of this program
 
+// Removes trailing commas and capitalizes register names
+void normalizeRegister(char*);
+
+// Returns a 3-bit binary string corresponding to a register name (e.g., "R3" -> "011")
+char* registerToBinary(char*);
+
+// Calculates the PC-relative offset between two addresses (with 9-bit signed range)
+int calculateOffset(int currentAddress, int targetAddress);
+
 // Converts LC-3 assembly file to binary file with field notation
 void convert(char*);
 
@@ -30,17 +39,9 @@ void hexToBinary(char*, char*);
 // Extracts the hex number from a string (e.g., from a line like ".ORIG x3000")
 void extractHexNumber(char*, char*);
 
-// Returns a 3-bit binary string corresponding to a register name (e.g., "R3" -> "011")
-char* registerToBinary(char*);
-
 // Formats a 16-bit binary string into human-readable field notation with spaces
 void formatFieldNotation(char*, char*, const char*);
 
-// Removes trailing commas and capitalizes register names
-void normalizeRegister(char*);
-
-// Calculates the PC-relative offset between two addresses (with 9-bit signed range)
-int calculateOffset(int currentAddress, int targetAddress);
 
 
 
